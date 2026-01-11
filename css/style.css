@@ -1,29 +1,30 @@
-/* --- MOBILE STYLES (Default) --- */
+
 .container {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 15px;
-    background-color: #9fa967; /* Gray background */
+    background-color: #9fa967; 
 }
 
-/* The green box containing articles */
+
 .articles-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
     padding: 20px;
-    background-color: #717751; /* Green */
+    background-color: #717751; 
     border-radius: 8px;
 }
 
-/* Vertical stack for the middle section on mobile */
+
 .main-body {
     display: flex;
     flex-direction: column;
+
 }
 
-/* General box styling */
+
 .header, .article, .aside, .footer {
     display: flex;
     justify-content: center;
@@ -39,19 +40,18 @@
 .aside { background-color: #184059; }   
 .footer { background-color: #137824; }  
 
-/* --- DESKTOP EXPANSION (The "Movement") --- */
+
 @media (min-width: 768px) {
     .main-body {
-        flex-direction: row; /* This makes Aside and Articles go side-by-side */
+        flex-direction: row; 
     }
 
     .aside {
-        width: 30%; /* Aside takes up 30% of the width */
-        order: 1;    /* Moves Aside to the LEFT */
+        width: 30%; 
+        order: 1;    
     }
-
     .articles-container {
-        width: 70%; /* Articles take up the rest of the space */
-        order: 2;    /* Moves Articles to the RIGHT */
+        width: 70%; 
+        order: 2;    
     }
-}
+} 
