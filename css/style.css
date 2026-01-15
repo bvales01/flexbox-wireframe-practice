@@ -5,22 +5,26 @@
     gap: 15px;
     padding: 15px;
     background-color: #9fa967; 
+    min-height: 100vh;
 }
 
 
 .articles-container {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
     gap: 10px;
     padding: 20px;
     background-color: #717751; 
     border-radius: 8px;
+    justify-content: center;    
 }
+
 
 
 .main-body {
     display: flex;
     flex-direction: column;
+    flex: 1;
 
 }
 
